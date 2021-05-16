@@ -13,14 +13,12 @@ export class AssemblyService {
   constructor(private httpService: HttpService) {}
 
   getAssemblies() {
-    return this.httpService
-      .get('posts')
-      .pipe(
-        tap((res) => {
-          this.assembliesList.next(res);
-          return res;
-        }),
-        catchError(this.httpService.handleError<[]>([]))
-      );
+    return this.httpService.get('posts').pipe(
+      tap((res) => {
+        this.assembliesList.next(res);
+        return res;
+      }),
+      catchError(this.httpService.handleError<[]>([]))
+    );
   }
 }

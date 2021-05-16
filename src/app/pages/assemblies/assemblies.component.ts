@@ -12,6 +12,7 @@ import { AssemblyService } from 'src/app/services/assembly.service';
 })
 export class AssembliesComponent implements OnInit, OnDestroy {
   componentDestroyed = new Subject();
+  assemblyLoading = false;
 
   constructor(
     private assemlyService: AssemblyService,
@@ -22,10 +23,12 @@ export class AssembliesComponent implements OnInit, OnDestroy {
     this.getAssemblies();
   }
   getAssemblies() {
+    this.assemblyLoading = true;
     this.assemlyService
       .getAssemblies()
       .pipe(takeUntil(this.componentDestroyed))
       .subscribe((res) => {
+        this.assemblyLoading = false;
         console.log('this.assemlyService.getAssemblies', res);
       });
   }
