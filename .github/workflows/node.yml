@@ -2,9 +2,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ test-develop ]
   pull_request:
-    branches: [ main ]
+    branches: [ test-develop ]
 
 jobs:
   build:
@@ -23,3 +23,4 @@ jobs:
       
     - name: Create build
       run: yarn build
+           yarn deploy
