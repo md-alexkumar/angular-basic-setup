@@ -7,7 +7,7 @@
     "build": "ng build --prod",
     "set-git": "git config user.email md.alexkumar@gmail.com && git config user.name \"Alex K.D\" --replace-all",
     "start-pwa": "ng build --prod && http-server -p 8080 -c-1 dist/basic-setup",
-    "deploy": "npx gh-pages -d dist/basic-setup && yarn set-git",
+    "deploy": "yarn set-git && npx gh-pages -d dist/basic-setup",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
