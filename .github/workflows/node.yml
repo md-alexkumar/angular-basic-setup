@@ -2,9 +2,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ test-develop ]
   pull_request:
-    branches: [ main ]
+    branches: [ test-develop ]
 
 jobs:
   build:
@@ -23,9 +23,4 @@ jobs:
       
     - name: Create build
       run: yarn build
-
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@4.1.3
-      with:
-          branch: main # The branch the action should deploy to.
-          folder: dist/basic-setup # The folder the action should deploy.
+           yarn deploy
