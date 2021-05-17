@@ -22,5 +22,6 @@ jobs:
       run: yarn install
       
     - name: Create build
-      run: yarn build
-           yarn deploy
+      run: |
+          yarn build
+          yarn deploy
