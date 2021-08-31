@@ -1,0 +1,9 @@
+Notes
+-------
+Create Project Setup
+  Create the new angular setup by `ng new angular-pwa --skip-install` to avoid package install.
+  To use yarn by default run `ng config cli.packageManager yarn`.
+
+PWA Setup
+  Syntax => ng add @angular/pwa --project <project-name>
+  Change the build script as `ng build --prod`.
