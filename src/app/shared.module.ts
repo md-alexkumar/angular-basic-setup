@@ -18,6 +18,7 @@ import { InputComponent } from './components/input/input.component';
 import { SelectComponent } from './components/select/select.component';
 import { SampleFormComponent } from './components/sample-form/sample-form.component';
 import { LoaderComponent } from './components/loader/loader.component';
+import { SubCategoriesComponent } from './components/sub-categories/sub-categories.component';
 
 const materialModules = [
   MatIconModule,
@@ -45,6 +46,7 @@ const sharedComponents = [
   SelectComponent,
   SampleFormComponent,
   LoaderComponent,
+  SubCategoriesComponent
 ];
 
 @NgModule({
