@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1630408711595,
+  "timestamp": 1635585900365,
   "index": "/angular-basic-setup/index.html",
   "assetGroups": [
     {
@@ -58,7 +58,7 @@
     "/angular-basic-setup/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/angular-basic-setup/common.c2e8e7b76f3469fbf5f0.js": "566101005446eea41c3820c356bce1091137b369",
     "/angular-basic-setup/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/angular-basic-setup/index.html": "22a97bb5e194e5074b119c6844442a1045916918",
+    "/angular-basic-setup/index.html": "27f6a5f7f09e7b7b125fe338aebdff435ec4c043",
     "/angular-basic-setup/main.b4a1de122af1d9b0f1aa.js": "4c4591ee6b93693a5a03e939ed14de3b10be20a1",
     "/angular-basic-setup/manifest.webmanifest": "3571d6994f890f9cbbcdd7240cabb92945273969",
     "/angular-basic-setup/polyfills.d6900d0f4c7d93b04d0f.js": "506855517e1835c4f3db5c7d25569b95bee71560",
